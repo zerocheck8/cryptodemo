@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TwalaEx</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Kwai Pixel Code -->
+    <script>
+    !function(e,t){"object"==typeof exports&&"object"==typeof module?module.exports=t():"function"==typeof define&&define.amd?define([],t):"object"==typeof exports?exports.install=t():e.install=t()}(window,(function(){return function(e){var t={};function n(o){if(t[o])return t[o].exports;var r=t[o]={i:o,l:!1,exports:{}};return e[o].call(r.exports,r,r.exports,n),r.l=!0,r.exports}return n.m=e,n.c=t,n.d=function(e,t,o){n.o(e,t)||Object.defineProperty(e,t,{enumerable:!0,get:o})},n.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},n.t=function(e,t){if(1&t&&(e=n(e)),8&t)return e;if(4&t&&"object"==typeof e&&e&&e.__esModule)return e;var o=Object.create(null);if(n.r(o),Object.defineProperty(o,"default",{enumerable:!0,value:e}),2&t&&"string"!=typeof e)for(var r in e)n.d(o,r,function(t){return e[t]}.bind(null,r));return o},n.n=function(e){var t=e&&e.__esModule?function(){return e.default}:function(){return e};return n.d(t,"a",t),t},n.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},n.p="",n(n.s=0)}([function(e,t,n){"use strict";var o=this&&this.__spreadArray||function(e,t,n){if(n||2===arguments.length)for(var o,r=0,i=t.length;r<i;r++)!o&&r in t||(o||(o=Array.prototype.slice.call(t,0,r)),o[r]=t[r]);return e.concat(o||Array.prototype.slice.call(t))};Object.defineProperty(t,"__esModule",{value:!0});var r=function(e,t,n){var o,i=e.createElement("script");i.type="text/javascript",i.async=!0,i.src=t,n&&(i.onerror=function(){r(e,n)});var a=e.getElementsByTagName("script")[0];null===(o=a.parentNode)||void 0===o||o.insertBefore(i,a)};!function(e,t,n){e.KwaiAnalyticsObject=n;var i=e[n]=e[n]||[];i.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"];var a=function(e,t){e[t]=function(){for(var n=[],r=0;r<arguments.length;r++)n[r]=arguments[r];var i=o([t],n,!0);e.push(i)}};i.methods.forEach((function(e){a(i,e)})),i.instance=function(e){var t,n=(null===(t=i._i)||void 0===t?void 0:t[e])||[];return i.methods.forEach((function(e){a(n,e)})),n},i.load=function(e,o){var a="https://s1.kwai.net/kos/s101/nlav11187/pixel/events.js";i._i=i._i||{},i._i[e]=[],i._i[e]._u=a,i._t=i._t||{},i._t[e]=+new Date,i._o=i._o||{},i._o[e]=o||{};var c="?sdkid=".concat(e,"&lib=").concat(n);r(t,a+c,"https://s16-11187.ap4r.com/kos/s101/nlav11187/pixel/events.js"+c)}}(window,document,"kwaiq")}])}));
+    </script>
+    <script>
+    kwaiq.load('272212083030314');
+    kwaiq.page();
+    </script>
+    <!-- End Kwai Pixel Code -->
+    
+    <style>
+        :root {
+            --color-bg: #0a0c10;
+            --color-header: #161b22;
+            --color-text: #e6edf3;
+            --color-text-secondary: #7d8590;
+            --color-border: #30363d;
+            --color-accent: #6c7ae0;
+            --color-card-bg: #161b22;
+            --gradient-primary: linear-gradient(145deg, var(--color-card-bg), rgba(108, 122, 224, 0.05));
+            --transition-default: all 0.3s ease;
+        }
+        
+        body {
+            font-family: -apple-system, system-ui, sans-serif;
+            background-color: var(--color-bg);
+            color: var(--color-text);
+            -webkit-font-smoothing: antialiased;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .header {
+            background-color: var(--color-header);
+            border-bottom: 1px solid var(--color-border);
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            backdrop-filter: blur(10px);
+        }
+
+        .logo-container {
+            background: linear-gradient(135deg, #6c7ae0, #4354d9);
+            padding: 10px;
+            border-radius: 14px;
+            box-shadow: 0 4px 12px rgba(108, 122, 224, 0.2);
+        }
+
+        .logo {
+            width: 36px;
+            height: 36px;
+            border-radius: 8px;
+        }
+
+        .brand-name {
+            font-size: 1.5rem;
+            font-weight: 600;
+            color: #fff;
+            margin-bottom: 2px;
+        }
+
+        .brand-slogan {
+            font-size: 0.875rem;
+            color: var(--color-text-secondary);
+        }
+
+        .hero-section {
+            padding: 40px 0 20px;  /* 减少底部间距 */
+            background: linear-gradient(180deg, var(--color-header) 0%, var(--color-bg) 100%);
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-container {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .hero-text {
+            text-align: center;
+            padding: 0 20px;
+            margin-bottom: 3rem;  /* 增加与图片的间距 */
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .hero-title {
+            font-size: clamp(1.75rem, 3vw, 2.5rem);
+            font-weight: 600;
+            line-height: 1.3;
+            margin-bottom: 1.5rem;
+            background: linear-gradient(120deg, #fff, var(--color-accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .hero-subtitle {
+            font-size: 1.125rem;
+            color: var(--color-text-secondary);
+            margin-bottom: 0.75rem;
+        }
+
+        .hero-image-container {
+            width: 90%;
+            margin: 0 auto;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-image {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: 20px;
+        }
+
+        .image-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(
+                180deg, 
+                rgba(26, 27, 34, 0.4) 0%,
+                rgba(26, 27, 34, 0.2) 50%,
+                rgba(26, 27, 34, 0.6) 100%
+            );
+            pointer-events: none;
+        }
+
+        .feature-section {
+            background: linear-gradient(145deg, var(--color-card-bg), rgba(108, 122, 224, 0.05));
+            border: 1px solid var(--color-border);
+            border-radius: 20px;
+            padding: 32px;
+            margin: 24px 0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-section:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 30px rgba(108, 122, 224, 0.15);
+            border-color: var(--color-accent);
+        }
+
+        .feature-title {
+            color: #fff;
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding-bottom: 1rem;
+            border-bottom: 1px solid rgba(108, 122, 224, 0.2);
+        }
+
+        .feature-title svg {
+            color: var(--color-accent);
+            filter: drop-shadow(0 2px 4px rgba(108, 122, 224, 0.3));
+        }
+
+        .feature-text {
+            font-size: 1.2rem;
+            color: var(--color-accent);
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+
+        .feature-text-small {
+            font-size: 1rem;
+            color: var(--color-text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            padding-left: 1rem;
+            border-left: 2px solid rgba(108, 122, 224, 0.2);
+        }
+
+        .feature-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 1px;
+            background: linear-gradient(90deg, 
+                transparent, 
+                var(--color-accent), 
+                transparent
+            );
+        }
+
+        .header .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+        }
+
+        .brand-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .whatsapp-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            background: linear-gradient(135deg, #25D366, #128C7E);
+            color: white;
+            padding: 14px 28px;
+            border-radius: 14px;
+            font-size: 1.125rem;
+            font-weight: 500;
+            margin: 20px auto;  /* 减少上下边距 */
+            width: 90%;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 6px 16px rgba(37, 211, 102, 0.2);
+        }
+
+        .whatsapp-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+            color: white;
+        }
+
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1080px;
+            margin: 0 auto;
+            padding: 0;
+        }
+
+        .container.py-4 {
+            padding-top: 1rem !important;  /* 减少顶部内边距 */
+        }
+
+        .feature-section:first-of-type {
+            margin-top: 16px;  /* 减少第一个功能区块的上边距 */
+        }
+
+        /* 统一响应式布局 */
+        @media (max-width: 768px) {
+            .brand-slogan {
+                display: none;
+            }
+            
+            .hero-title {
+                font-size: 1.5rem;
+            }
+
+            .hero-subtitle {
+                font-size: 1rem;
+            }
+
+            .feature-section {
+                padding: 24px;
+            }
+
+            .feature-title {
+                font-size: 1.2rem;
+            }
+
+            .feature-text {
+                font-size: 1.1rem;
+            }
+
+            .feature-text-small {
+                font-size: 0.95rem;
+                padding-left: 0.75rem;
+            }
+
+            .whatsapp-button {
+                font-size: 1rem;
+                padding: 12px 20px;
+            }
+
+            .hero-image-container {
+                width: 95%;
+            }
+
+            .container {
+                width: 95%;
+            }
+
+            .hero-section {
+                padding: 40px 0 10px;  /* 移动端更小的底部间距 */
+            }
+
+            .whatsapp-button {
+                margin: 16px auto;  /* 移动端更小的按钮边距 */
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 1024px) {
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .hero-image-container,
+            .container {
+                width: 85%;
+            }
+        }
+
+        @media (min-width: 1025px) {
+            .hero-image-container,
+            .container {
+                width: 80%;
+            }
+        }
+
+        /* 添加特殊样式用于突出显示重要部分 */
+        .feature-section.highlight {
+            background: linear-gradient(145deg, rgba(108, 122, 224, 0.1), rgba(108, 122, 224, 0.05));
+            border: 1px solid var(--color-accent);
+            box-shadow: 0 8px 24px rgba(108, 122, 224, 0.15);
+        }
+
+        .feature-section.highlight .feature-title {
+            color: #fff;
+            background: linear-gradient(90deg, var(--color-accent), rgba(108, 122, 224, 0.7));
+            padding: 12px 20px;
+            border-radius: 12px;
+            margin: -8px -12px 24px;
+            border-bottom: none;
+        }
+
+        .feature-section.highlight .feature-title svg {
+            filter: drop-shadow(0 2px 4px rgba(255, 255, 255, 0.3));
+        }
+
+        .feature-section.highlight:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 36px rgba(108, 122, 224, 0.25);
+        }
+
+        .bonus-amount {
+            font-size: 1.3rem;
+            color: #ffd700;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <nav class="header navbar navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-container">
+                    <img src="TEX-logo.png" alt="TwalaEx Logo" class="logo">
+                </div>
+                <div class="brand-text">
+                    <span class="brand-name">TwalaEx</span>
+                    <span class="brand-slogan">abrindo o futuro do mercado de criptomoedas.</span>
+                </div>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <section class="hero-section">
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">TwalaEx (TEX) a principal plataforma global de negociação de derivativos de criptomoedas.</h1>
+                        <p class="hero-subtitle">🔹 Cadastre-se agora e ganhe um bônus de 5 dólares!</p>
+                        <p class="hero-subtitle">🔹 Junte-se à TwalaEx e comece sua jornada de investimentos inteligentes!</p>
+                    </div>
+                    <div class="hero-image-container">
+                        <img src="p1.jpg" alt="Success Illustration" class="hero-image">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="container py-4">
+            <a href="https://wa.me/您的WhatsApp号码" class="whatsapp-button" onclick="kwaiq.track('CompleteRegistration', {
+                value: 1,
+                content_name: 'WhatsApp Click',
+                currency: 'BRL',
+                success: true
+            });">
+                <svg class="whatsapp-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Contate-nos
+            </a>
+
+            <section class="feature-section highlight">
+                <h2 class="feature-title">
+                    <svg height="24" width="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M21 12a9 9 0 1 1-9-9 9 9 0 0 1 9 9Z"></path>
+                    </svg>
+                    Ganhe Bônus e Lucros com a TwalaEx
+                </h2>
+                <div class="mb-4">
+                    <p class="feature-text">
+                        <span class="task-number"></span>Bônus de Registro
+                    </p>
+                    <p class="feature-text-small">
+                        Cada novo cliente recebe um bônus de <span class="bonus-amount">30 USDT</span> ao se cadastrar. O bônus é válido por 7 dias e, após cumprir os requisitos para se tornar um usuário ativo, as recompensas e comissões passam a valer de forma permanente.
+                    </p>
+                </div>
+                <div>
+                    <p class="feature-text">
+                        <span class="task-number"></span>Salário mensal:
+                    </p>
+                    <p class="feature-text-small">
+                        A TEX rompe com os métodos tradicionais de promoção, evitando gastos excessivos com publicidade e focando no marketing boca a boca. O salário mensal varia de mínimo <span class="bonus-amount">40 BRL</span> a máximo <span class="bonus-amount">100.000 BRL</span>.
+                    </p>
+                </div>
+            </section>
+
+            
+            <section class="feature-section">
+                <h2 class="feature-title">
+                    <svg height="24" width="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    Plataforma Inteligente e Segurança Robusta
+                </h2>
+                <p class="feature-text">Plataforma inteligente com IA</p>
+                <p class="feature-text-small">Negociação de criptomoedas com IA, permitindo estratégias personalizadas e análise de mercado para lucros consistentes.</p>
+                <p class="feature-text mt-4">Segurança robusta</p>
+                <p class="feature-text-small">Proteção de fundos com carteiras frias, autenticação multifatorial e parcerias com seguradoras globais.</p>
+            </section>
+
+
+            <section class="feature-section">
+                <h2 class="feature-title">
+                    <svg height="24" width="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
+                    </svg>
+                    Negociação Automatizada e Expansão Global
+                </h2>
+                <p class="feature-text-small">• Negociação automatizada: Gestão de posições em tempo real, ajustando estratégias automaticamente para otimizar lucros.</p>
+                <p class="feature-text-small">•  Facilidade nas transações: Transparência nas operações, com depósitos e saques rápidos e sem custos ocultos.</p>
+                <p class="feature-text-small">• Expansão global: Operações na Ásia, Europa e América do Norte, com foco em crescimento contínuo no mercado global.</p>
+            </section>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
